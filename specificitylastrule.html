@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity and Last Rule</title>
+    <style>
+        /* specificity */
+    div#spc{
+        background-color: red;
+        font-size: 25px;
+    }
+    #spc{
+        background-color: darkred;
+    }
+    div[id=a] {background-color: deeppink;}
+    /* last rule */
+    p{
+        font-size: 30px;
+        font-size: 50px;
+    }
+    </style>
+</head>
+<body>
+  <div id="spc">This is Specificity</div>  
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, qui.</p>
+</body>
+</html>
